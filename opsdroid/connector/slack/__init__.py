@@ -151,6 +151,8 @@ class ConnectorSlack(Connector):
                 ),
                 error,
             )
+            return
+
 
         # Replace usernames in the message
         _LOGGER.debug(_("Replacing userids in message with usernames."))
